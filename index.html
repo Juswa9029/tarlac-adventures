@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <!-- Primary Meta Tags -->
+    <title>Tarlac Adventures - Your Ultimate Guide to Exploring Tarlac, Philippines</title>
+    <meta name='title' content='Tarlac Adventures - Your Ultimate Guide to Exploring Tarlac, Philippines'>
+    <meta name='description'
+          content='Discover the hidden gems of Tarlac with our comprehensive travel guides. From Mount Pinatubo to Monasterio de Tarlac, explore natural wonders, cultural sites, and local cuisine.'>
+    <meta name='keywords'
+          content='Tarlac tourism, Tarlac travel guide, Mount Pinatubo, Monasterio de Tarlac, Philippine travel, Central Luzon destinations, Canding Falls, Anzap Twin Falls, Tarlac tourist spots'>
+    <meta name='author' content='Tarlac Adventures'>
+
+    <!-- Open Graph / Facebook -->
+    <meta property='og:type' content='website'>
+    <meta property='og:url' content='https://tarlacadventures.com/'>
+    <meta property='og:title' content='Tarlac Adventures - Your Ultimate Guide to Exploring Tarlac, Philippines'>
+    <meta property='og:description'
+          content='Discover the hidden gems of Tarlac with our comprehensive travel guides. From Mount Pinatubo to Monasterio de Tarlac, explore natural wonders, cultural sites, and local cuisine.'>
+    <meta property='og:image' content='images/1.png'>
+
+    <!-- Twitter -->
+    <meta property='twitter:card' content='summary_large_image'>
+    <meta property='twitter:url' content='https://tarlacadventures.com/'>
+    <meta property='twitter:title' content='Tarlac Adventures - Your Ultimate Guide to Exploring Tarlac, Philippines'>
+    <meta property='twitter:description'
+          content='Discover the hidden gems of Tarlac with our comprehensive travel guides. From Mount Pinatubo to Monasterio de Tarlac, explore natural wonders, cultural sites, and local cuisine.'>
+    <meta property='twitter:image' content='images/1.png'>
+
+    <!-- Favicon -->
+    <link rel='icon' type='image/png' href='favicon.png'>
+    <link rel='apple-touch-icon' href='apple-touch-icon.png'>
+
+    <!-- Canonical URL -->
+    <meta rel='canonical' href='https://tarlacadventures.com/'>
+
+    <!-- Robots -->
+    <meta name='robots' content='index, follow'>
+
+    <link rel='stylesheet' href='styles.css'>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.5/dist/cdn.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body class='bg-sage-light'>
+
+<header x-data="{ isMobileMenuOpen: false }" class="site-header">
+    <nav class="header-nav" aria-label="Global">
+        <div class="flex lg:flex-1">
+            <a href="#" class="site-logo">
+                Tarlac Adventures
+            </a>
+        </div>
+        <div class="desktop-nav">
+            <a class="header-link" href="#home">Home</a>
+            <a class="header-link" href="#about">About</a>
+            <a class="header-link" href="#destinations">Destinations</a>
+            <a class="header-link" href="#contacts">Contacts</a>
+            <a class="header-link" href="#about-us">About Us</a>
+        </div>
+
+        <div class="flex lg:hidden">
+            <button type="button" @click="isMobileMenuOpen = !isMobileMenuOpen" class="mobile-menu-button">
+                <span class="sr-only">Open main menu</span>
+                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                     aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <div x-show="isMobileMenuOpen" class="mobile-menu" role="dialog" aria-modal="true">
+            <div class="flex items-center justify-between">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="site-logo">
+                        Tarlac Adventures
+                    </a>
+                </div>
+                <button type="button" @click="isMobileMenuOpen = false" class="mobile-menu-button">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                         aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                        <a href="#home" @click="isMobileMenuOpen = false" class="mobile-menu-link">
+                            Home
+                        </a>
+                        <a href="#about" @click="isMobileMenuOpen = false" class="mobile-menu-link">
+                            About
+                        </a>
+                        <a href="#destinations" @click="isMobileMenuOpen = false" class="mobile-menu-link">
+                            Destinations
+                        </a>
+                        <a href="#contacts" @click="isMobileMenuOpen = false" class="mobile-menu-link">
+                            Contacts
+                        </a>
+                        <a href="#about-us" @click="isMobileMenuOpen = false" class="mobile-menu-link">
+                            About Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div class="home">
+        <div class="content-wrapper">
+            <section id="home" class="content-section">
+                <div class="content-container">
+                    <h1 class='title mb-6'>Tarlac Adventures: <br> Travel With Us</h1>
+                    <p>
+                        Nestled in the heart of Central Luzon, Tarlac is a hidden gem waiting to be discovered.
+                        <br>
+                        Our blog is your ultimate guide to exploring this vibrant province,
+                        known for its rich cultural heritage, breathtaking landscapes, and thrilling adventures.
+                        <br>
+                        Whether you're a history buff, a nature lover, or an adrenaline junkie, Tarlac has something
+                        special
+                        for
+                        you.
+                    </p>
+
+                    <a href='#about' class='btn'>
+                        Start Here
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section id='about'>
+        <div class='flex flex-col justify-center pb-10'>
+            <h2 class='title mt-10'>About Tarlac</h2>
+
+            <div class='card'>
+                <img src='images/1.png' alt='discover-tarlac' class='rounded-3xl'>
+                <div class='max-w-3/4'>
+                    <p class='content-text'>
+                        Discover Tarlac <br />
+                        From the lush landscapes of Mount Damas to the serene Monasterio de Tarlac, this province is a
+                        haven
+                        for nature lovers and adventure seekers alike. Explore the historical landmarks that tell the
+                        story
+                        of Tarlac's pivotal role in the Philippine Revolution, or take a leisurely stroll through its
+                        vibrant local markets
+                    </p>
+                </div>
+            </div>
+
+            <div class='card lg:flex-row-reverse'>
+                <img src='images/2.png' alt='adventure-awaits' class='rounded-3xl'>
+                <div class='max-w-3/4'>
+                    <p class='content-text'>
+                        Adventure Awaits<br />
+                        Whether you're hiking through the scenic trails, biking across the rolling plains, or simply
+                        soaking
+                        in the local culture, Tarlac promises an adventure at every turn. Don't miss the chance to visit
+                        the
+                        Capas National Shrine, a poignant reminder of the region's storied past
+                    </p>
+                </div>
+            </div>
+
+            <div class='card'>
+                <img src='images/3.png' alt='food' class='rounded-3xl'>
+                <div class='max-w-3/4'>
+                    <p class='content-text'>
+                        Tarlac is also a food lover's paradise. Indulge in local delicacies that reflect the province's
+                        multicultural heritage, from traditional Filipino dishes to unique culinary creations that you
+                        won't
+                        find anywhere else.
+                    </p>
+                </div>
+            </div>
+
+            <div class='card lg:flex-row-reverse'>
+                <img src='images/4.png' alt='join' class='rounded-3xl'>
+                <div class='max-w-3/4'>
+                    <p class='content-text'>
+                        Join us as we uncover the hidden gems and popular attractions of Tarlac. With Tarlac Adventures:
+                        Travel With Us, every journey is a story worth sharing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class='destinations'>
+        <div class='content-wrapper'>
+            <section id='destinations'>
+                <div class='flex flex-col items-center justify-center min-h-default'>
+                    <h2 class='title text-center mb-10'>Destinations</h2>
+                    <div class='destinations-grid'>
+                        <a class='destination' href='#monasterio-de-tarlac'>
+                            <img src='images/5.png' class='card-image' alt='monasterio'>
+                            <p class='destination-item'>Monasterio de Tarlac</p>
+                        </a>
+
+                        <a class='destination' href='#canding-falls'>
+                            <img src='images/6.png' class='card-image' alt='canding-falls'>
+                            <p class='destination-item'>Canding Falls</p>
+                        </a>
+                        <a class='destination' href='#mount-pinatubo'>
+                            <img src='images/7.png' class='card-image' alt='mt-pinatubo'>
+                            <p class='destination-item'>Mount Pinatubo</p>
+                        </a>
+
+                        <a class='destination' href='#la-sagrada-familia-parish'>
+                            <img src='images/8.png' class='card-image' alt='la-sagrada-familia-parish'>
+                            <p class='destination-item'>La Sagrada Familia Parish</p>
+                        </a>
+
+                        <a class='destination' href='#aquino-center-and-museum'>
+                            <img src='images/9.png' class='card-image' alt='aquino-center-and-museum'>
+                            <p class='destination-item'>Aquino Center and Museum</p>
+                        </a>
+
+                        <a class='destination' href='#goshen-resort-and-hotel'>
+                            <img src='images/10.png' class='card-image' alt='goshen-resort-and-hotel'>
+                            <p class='destination-item'>Goshen Resort and Hotel</p>
+                        </a>
+
+                        <a class='destination' href='#anzap-twin-falls'>
+                            <img src='images/11.png' class='card-image' alt='anzap-twin-falls'>
+                            <p class='destination-item'>Anzap Twin Falls</p>
+                        </a>
+
+                        <a class='destination' href='#sitio-tala'>
+                            <img src='images/12.png' class='card-image' alt='sitio-tala'>
+                            <p class='destination-item'>Sitio Tala, “Little Baguio”</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <div class='content'>
+        <section id='monasterio-de-tarlac'>
+            <h2 class='title mt-10'>Monasterio de Tarlac</h2>
+            <div class='card mt-0'>
+                <img src='images/5.png' class='rounded-3xl' alt='monasterio'>
+                <p>
+                    The Monasterio de Tarlac is a Catholic monastery on top of Mount Resurrection, part of the
+                    Zambales Mountain Range on the island of Luzon in the Philippines. It is part of the Mount
+                    Resurrection Eco Park in Barangay Lubigan, San José, Tarlac. The monastery houses a relic
+                    believed to be a fragment of the True Cross of Jesus.
+                </p>
+            </div>
+            <h2 class='title mt-10'>Place to Eat</h2>
+            <div class='card mt-0 lg:flex-row-reverse'>
+                <img src='images/13.png' class='rounded-3xl' alt='place-to-eat'>
+                <p>
+                    Nestled atop the serene hills of Tarlac, Monasterio Mountain View by CAFE TRIBU offers a
+                    breathtaking panorama that is perfect for a relaxing getaway. <br><br>
+                    This charming café provides visitors with a stunning view of the lush landscapes surrounding
+                    the
+                    Monasterio de Tarlac, making it an ideal spot to unwind and soak in the natural beauty.
+                    Enjoy a delightful meal or a refreshing drink while gazing at the majestic 30-foot Christ
+                    the
+                    Redeemer statue and the well-kept gardens that adorn the area1. Whether you're looking for a
+                    peaceful retreat or a picturesque backdrop for your travel photos, CAFE TRIBU promises an
+                    unforgettable experience.
+                </p>
+            </div>
+            <h2 class='title mt-10'>Famous Attractions</h2>
+            <div class='card mt-0'>
+                <img src='images/14.png' class='rounded-3xl' alt='famous-attractions'>
+                <p class='min-w-full'>
+                    The 30-foot Statue of the Risen Christ: This impressive statue is a major highlight and a
+                    popular photo spot
+                </p>
+            </div>
+        </section>
+
+        <section id='canding-falls'>
+            <h2 class='title mt-10'>Canding Falls</h2>
+            <div class='card mt-0'>
+                <img src='images/6.png' class='rounded-3xl' alt='canding'>
+                <p>
+                    Canding Falls is located in Barangay Maasin, San Clemente, Tarlac, and is one of the top
+                    eco-tourism and tourist destinations in Tarlac due to its accessibility. <br><br>
+                    Canding Falls is a pretty easy hike from the Canding River jump-off location, which is 1km
+                    away.
+                    Canding Falls is a wonderful area to relax in the cool water, take in the scenery, and, most
+                    importantly, appreciate the beauty of the entire Canding Falls.
+                </p>
+            </div>
+            <h2 class='title mt-10'>Place to Eat</h2>
+            <div class='card mt-0 lg:flex-row-reverse'>
+                <img src='images/15.png' class='rounded-3xl' alt='place-to-eat'>
+                <p>
+                    Canding Falls is located in Barangay Maasin, San Clemente, Tarlac, and is one of the top
+                    eco-tourism and tourist destinations in Tarlac due to its accessibility. <br><br>
+                    Canding Falls is a pretty easy hike from the Canding River jump-off location, which is 1km
+                    away.
+                    Canding Falls is a wonderful area to relax in the cool water, take in the scenery, and, most
+                    importantly, appreciate the beauty of the entire Canding Falls.
+                </p>
+            </div>
+            <h2 class='title mt-10'>Famous Attractions</h2>
+            <div class='card mt-0'>
+                <img src='images/16.png' class='rounded-3xl' alt='famous-attractions'>
+                <p class='w-full'>
+                    Scenic Waterfall & Cliff Diving: The falls are around 20 feet high and cascade into a deep,
+                    clear pool, perfect for swimming And for the adventurous, there are several jumping points,
+                    with
+                    the highest being 20 feet.
+                </p>
+            </div>
+        </section>
+
+        <section id='mount-pinatubo'>
+            <h2 class='title mt-10'>Mount Pinatubo</h2>
+            <div class='card mt-0'>
+                <img src='images/7.png' class='rounded-3xl' alt='canding'>
+                <p>
+                    Mount Pinatubo is located on the shared border of Tarlac, Zambales, and Pampanga. <br><br>
+                    The active volcano is notorious for its eruption on June 15, 1991, which is considered the
+                    second-largest terrestrial eruption of the 20th century.
+                </p>
+            </div>
+            <h2 class='title mt-10'>Place to Eat</h2>
+            <div class='card mt-0 lg:flex-row-reverse'>
+                <img src='images/17.png' class='rounded-3xl' alt='place-to-eat'>
+                <p>
+                    Bale Capampangan: A popular local restaurant near Mount Pinatubo, known for its traditional
+                    Filipino dishes. It's a great place to experience local flavors
+                </p>
+            </div>
+            <h2 class='title mt-10'>Famous Attractions</h2>
+            <div class='card mt-0'>
+                <img src='images/18.png' class='rounded-3xl' alt='famous-attractions'>
+                <p class='w-full'>
+                    Mount Pinatubo is now a tourist attraction in Tarlac and is one of the Philippine volcanoes
+                    worth seeing.
+                    You can explore the volcano and its surrounding landscapes via Mount Pinatubo tours, which
+                    include crater hikes and 4x4 rides.
+                </p>
+            </div>
+        </section>
+
+        <section id='la-sagrada-familia-parish'>
+            <h2 class='title mt-10'>La Sagrada Familia Parish </h2>
+            <div class='card mt-0'>
+                <img src='images/8.png' class='rounded-3xl' alt='canding'>
+                <p>
+                    La Sagrada Familia Parish in Gerona, Tarlac, is a remarkable religious site known for its
+                    intricate design and historical significance. <br><br>
+                    Built in 2017, the church features a beautifully crafted altar that gained prominence when
+                    Pope
+                    Francis kissed it during his visit to the Philippines in 2015. Designed by the late Rev. Fr.
+                    Alex Bautista, the church reflects a blend of faith, culture, and environment, making it a
+                    significant landmark in Tarlac
+                </p>
+            </div>
+            <h2 class='title mt-10'>Place to Eat</h2>
+            <div class='card mt-0 lg:flex-row-reverse'>
+                <img src='images/20.png' class='rounded-3xl' alt='place-to-eat'>
+                <p>
+                    Isdaan Floating Restaurant offers a unique dining experience where you can savor delicious
+                    Filipino cuisine while seated in floating huts. <br><br>
+                    It's an ideal spot for families, featuring various activities and entertainment options that
+                    make the visit enjoyable for all ages. <br><br>
+                    Whether you're looking to relax and enjoy the serene ambiance or engage in fun activities,
+                    Isdaan Floating Restaurant has something for everyone.
+                </p>
+            </div>
+            <h2 class='title mt-10'>Famous Attractions</h2>
+            <div class='card mt-0'>
+                <img src='images/19.png' class='rounded-3xl' alt='famous-attractions'>
+                <p class='w-full'>
+                    Architectural Beauty: The church is admired for its stunning architectural design, both
+                    inside
+                    and out. The intricate details and the serene ambiance make it a must-visit for those
+                    interested
+                    in religious architecture
+                </p>
+            </div>
+        </section>
+
+        <section id='aquino-center-and-museum'>
+            <h2 class='title mt-10'>Aquino Center and Museum</h2>
+            <div class='card mt-0'>
+                <img src='images/9.png' class='rounded-3xl' alt='canding'>
+                <p>
+                    The Aquino Center and Museum is established as a tribute to the two icons of democracy. The
+                    late
+                    Sen. Benigno “Ninoy” Aquino Jr. and his wife, the late President Corazon “Cory” Aquino.
+                </p>
+            </div>
+            <h2 class='title mt-10'>Place to Eat</h2>
+            <div class='card mt-0 lg:flex-row-reverse'>
+                <img src='images/21.png' class='rounded-3xl' alt='place-to-eat'>
+                <p>
+                    The Gentle Sparrow Café is a charming spot nestled within the Luisita Golf and Country Club
+                    in
+                    Tarlac. <br><br>
+                    This cozy café offers a serene escape with its picturesque setting, featuring a terrace
+                    shaded
+                    by a massive tent and a bar tucked under the building's old arches. <br><br>
+                    The menu is straightforward yet delightful, with options ranging from all-day brunch sets to
+                    refreshing juices and shakes. It's a perfect stop for a relaxing meal while enjoying the
+                    scenic
+                    views of the golf course
+                </p>
+            </div>
+            <h2 class='title mt-10'>Famous Attractions</h2>
+            <div class='card mt-0'>
+                <img src='images/22.png' class='rounded-3xl' alt='famous-attractions'>
+                <p class='w-full'>
+                    Historical Exhibits: The museum houses a collection of memorabilia, including personal
+                    items,
+                    photographs, and documents that chronicle the lives of Ninoy and Cory Aquino. Key exhibits
+                    include the clothes Ninoy wore during his assassination, which are displayed in a glass case
+                </p>
+            </div>
+        </section>
+
+        <section id='goshen-resort-and-hotel'>
+            <h2 class='title mt-10'>Goshen Resort and Hotel</h2>
+            <div class='card mt-0'>
+                <img src='images/10.png' class='rounded-3xl' alt='canding'>
+                <p>
+                    Goshen Resort And Hotel resort's structures will truly make you feel that you experiencing
+                    an
+                    Italian holiday. A unique retreat that transports visitors to ancient Rome with its
+                    impressive
+                    Roman-inspired architecture.
+                </p>
+            </div>
+            <h2 class='title mt-10'>Place to Eat</h2>
+            <div class='card mt-0 lg:flex-row-reverse'>
+                <img src='images/23.png' class='rounded-3xl' alt='place-to-eat'>
+                <p>
+                    Cafe Roma is a delightful café located within the picturesque Goshen Resort and Hotel in
+                    Bamban,
+                    Tarlac. <br><br>
+                    This lovely spot offers a cozy ambiance with its Roman-inspired decor, perfectly
+                    complementing
+                    the resort's overall theme. <br><br>
+                    Guests can enjoy a variety of menu items, including Italian dishes that enhance the Roman
+                    vibe
+                    of the place
+                </p>
+            </div>
+            <h2 class='title mt-10'>Famous Attractions</h2>
+            <div class='card mt-0'>
+                <img src='images/24.png' class='rounded-3xl' alt='famous-attractions'>
+                <p class='w-full'>
+                    Guests can enjoy various amenities, including swimming pools with Roman-themed backdrops,
+                    spacious grounds for events, and a serene environment perfect for family gatherings or
+                    romantic
+                    getaways. <br><br>
+                    Located just a few hours' drive from Manila, Goshen Resort offers a distinctive escape from
+                    the
+                    hustle and bustle of city life.
+                </p>
+            </div>
+        </section>
+
+        <section id='anzap-twin-falls'>
+            <h2 class='title mt-10'>Anzap Twin Falls</h2>
+            <div class='card mt-0'>
+                <img src='images/11.png' class='rounded-3xl' alt='canding'>
+                <p>
+                    Anzap Twin Falls is a stunning natural attraction located in Mayantoc, Tarlac. <br><br>
+                    This 200-foot high waterfall is part of the ASEAN-New Zealand Afforestation Project and is
+                    one
+                    of the tallest waterfalls in the province1. The falls are composed of two streams
+                    originating
+                    from the Matibya and Piccan Rivers, making it one of the few twin falls in the Philippines
+                </p>
+            </div>
+            <h2 class='title mt-10'>Place to Eat</h2>
+            <div class='card mt-0 lg:flex-row-reverse'>
+                <img src='images/25.png' class='rounded-3xl' alt='place-to-eat'>
+                <p>
+                    Intan Cafe Bistro in Mayantoc, Tarlac, is a charming and intimate spot known for its scenic
+                    views of the mountain ranges of Tarlac. <br><br>
+                    The cafe offers a relaxed atmosphere, making it a perfect place to unwind and enjoy a meal
+                    with
+                    friends or family. Their menu features a variety of dishes that cater to different tastes,
+                    ensuring there's something for everyone
+                </p>
+            </div>
+            <h2 class='title mt-10'>Famous Attractions</h2>
+            <div class='card mt-0'>
+                <img src='images/26.png' class='rounded-3xl' alt='famous-attractions'>
+                <p class='w-full'>
+                    ANZAP Twin Falls in Tarlac is a stunning natural attraction where the Matibya and Piccan
+                    Rivers
+                    converge, creating two majestic waterfalls that stand around 200 feet tall.
+                    Established in the 1970s, this area has become a beloved destination for hikers and nature
+                    enthusiasts. The rich forestry surrounding the falls offers a lush, green backdrop, making
+                    it
+                    one of Tarlac's premier hiking spots.
+                </p>
+            </div>
+        </section>
+
+        <section id='sitio-tala'>
+            <h2 class='title mt-10'>Sitio Tala, “Little Baguio”</h2>
+            <div class='card mt-0'>
+                <img src='images/12.png' class='rounded-3xl' alt='canding'>
+                <p>
+                    Sitio Tala, often referred to as the “Little Baguio” of Tarlac, is a picturesque destination
+                    located in San Jose, Tarlac. This wonderful spot is known for its cool climate, scenic
+                    mountain
+                    views, and lush pine trees, reminiscent of Baguio City.
+                </p>
+            </div>
+            <h2 class='title mt-10'>Place to Eat</h2>
+            <div class='card mt-0 lg:flex-row-reverse'>
+                <img src='images/27.png' class='rounded-3xl' alt='place-to-eat'>
+                <p>
+                    Cafétana PH in San Jose, Tarlac, is a delightful mountain-side cafe known for its
+                    breathtaking
+                    views and serene ambiance. <br><br>
+                    Nestled in Sitio Baag, this spot offers visitors a perfect escape from the hustle and bustle
+                    of
+                    city life. Guests can enjoy a variety of coffee and refreshments while taking in the
+                    stunning
+                    scenery of the surrounding mountains
+                </p>
+            </div>
+            <h2 class='title mt-10'>Famous Attractions</h2>
+            <div class='card mt-0'>
+                <img src='images/28.png' class='rounded-3xl' alt='famous-attractions'>
+                <p class='w-full'>
+                    Visitors to Sitio Tala can enjoy a variety of activities such as hiking, picnicking, and
+                    photography.
+                    The area is particularly popular among adventure enthusiasts and motorbike riders who
+                    appreciate
+                    the winding roads and breathtaking landscapes. It's an ideal spot for those looking to
+                    unwind
+                    and experience nature's tranquility.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section id='contacts'>
+        <div class="contact-container">
+            <h2 class="title">Contact Us</h2>
+            <p class='text-center mt-12'>
+                On Social Media, we'd love to hear from you! Whether you have questions, suggestions, or just want to
+                share your travel stories, feel free to reach out. Connect with us on our social media channels or drop
+                us a message directly.
+                Let's stay in touch and make every adventure unforgettable!
+            </p>
+            <div class="social-links">
+                <a href='' class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    >
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </a>
+
+                <a href='' class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="lucide lucide-twitter"
+                    >
+                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                    </svg>
+                </a>
+
+                <a href='' class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="lucide lucide-instagram">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                </a>
+
+                <a href='' class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="lucide lucide-phone-call">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        <path d="M14.05 2a9 9 0 0 1 8 7.94" />
+                        <path d="M14.05 6A5 5 0 0 1 18 10" />
+                    </svg>
+                </a>
+
+                <a href='' class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="lucide lucide-at-sign">
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id='about-us'>
+        <div class="flex items-center text-center justify-center flex-col min-h-default">
+            <h2 class="title">About Us</h2>
+            <h3 class="subtitle mb-4">Welcome to Tarlac Adventures: Travel With Us!</h3>
+            <h2 class="title mb-6">Who We Are</h2>
+            <p class="mb-4">
+                We are a passionate team of travel enthusiasts dedicated to exploring and showcasing the hidden gems of
+                Tarlac,
+                Philippines. Our love for adventure and discovery drives us to uncover the best that this beautiful
+                province
+                has
+                to offer. From its rich cultural heritage to its breathtaking natural landscapes, we aim to bring you
+                closer
+                to
+                the heart of Tarlac.
+            </p>
+            <h2 class="title mb-6">What We Do</h2>
+            <p class="mb-6">
+                At Tarlac Adventures, we provide comprehensive travel guides, tips, and itineraries to help you make the
+                most of
+                your visit. Whether you're an adrenaline junkie looking for thrilling outdoor activities or a history
+                buff
+                eager
+                to delve into the past, we've got you covered.
+            </p>
+
+
+            <div class="">
+                <p>Our blog features:</p>
+                <ul class="about-list">
+                    <li class="about-list-item">
+                        <span class="list-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                 class="lucide lucide-check"><path d="M20 6 9 17l-5-5" /></svg>
+                        </span>
+                        <div>
+                            Detailed Travel Guides: Explore the top tourist spots, hidden trails, and local favorites.
+                        </div>
+                    </li>
+                    <li class="about-list-item">
+                        <span class="list-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                 class="lucide lucide-check"><path d="M20 6 9 17l-5-5" /></svg>
+                        </span>
+                        <div>
+                            Adventure Activities: Discover exciting activities like hiking, ATV rides, and more.
+                        </div>
+                    </li>
+                    <li class="about-list-item">
+                        <span class="list-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                 class="lucide lucide-check"><path d="M20 6 9 17l-5-5" /></svg>
+                        </span>
+                        <div>
+                            Cultural Insights: Learn about the diverse cultures and traditions that make Tarlac unique.
+                        </div>
+                    </li>
+                    <li class="about-list-item">
+                        <span class="list-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                 class="lucide lucide-check"><path d="M20 6 9 17l-5-5" /></svg>
+                        </span>
+                        <div>
+                            Travel Tips: Get practical advice on how to navigate and enjoy your trip to the fullest.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="mt-10">
+                Join us as we embark on this journey to explore, experience, and enjoy the wonders of Tarlac. Travel
+                with us
+                and
+                create unforgettable memories!
+            </p>
+        </div>
+    </section>
+
+</main>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TravelBlog",
+        "name": "Tarlac Adventures",
+        "description": "Your ultimate guide to exploring Tarlac, Philippines. Discover natural wonders, cultural sites, and local cuisine.",
+        "url": "https://tarlacadventures.com",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Tarlac Adventures",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://tarlacadventures.com/logo.png"
+            }
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Tarlac",
+            "addressCountry": "Philippines"
+        },
+        "sameAs": [
+            "https://facebook.com/tarlacadventures",
+            "https://twitter.com/tarlacadventures",
+            "https://instagram.com/tarlacadventures"
+        ]
+    }
+</script>
+
+</body>
+</html>
